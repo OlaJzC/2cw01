@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan lekcji</title>
     <script type="text/javascript">
-        
+    function odliczanie()
+    {
         var dzisiaj = new Date();
 
         var dzien = dzisiaj.getDate();
@@ -16,14 +17,19 @@
         var godzina = dzisiaj.getHours();
         var minuta = dzisiaj.getMinutes();
         var sekunda = dzisiaj.getSeconds();
-        
+
+        document.getElementById("zegar").innerHTML =
+        dzien+"/"+miesiac+"/"+rok+"|"+godzina+":"+minuta+":"+sekunda;
+
+        setTimeout("odliczanie", 1000);
+    }
+            
     </script>
 </head>
 <body>
     <div id="zegar"></div>
     <script type="text/javascript">
-            document.getElementById("zegar").innerHTML =
-            dzien+"/"+miesiac+"/"+rok+"|"+godzina+":"+minuta+":"+sekunda;
+            
     </script>
     <h1>Plan lekcji</h1>
     <h2>Środa</h2>
