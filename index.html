@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan lekcji</title>
+    <script type="text/javascript">
+        
+        var dzisiaj = new Date();
+
+        var dzien = dzisiaj.getDate();
+        var miesiac = dzisiaj.getMonth()+1;
+        var rok = dzisiaj.getFullYear();
+
+        var godzina = dzisiaj.getHours();
+        var minuta = dzisiaj.getMinutes();
+        var sekunda = dzisiaj.getSeconds();
+        
+    </script>
 </head>
 <body>
+    <div id="zegar"></div>
+        <script type="text/javascript">
+            document.getElementById("zegar").innerHTML = dzien;
+        </script>
     <h1>Plan lekcji</h1>
     <h2>Środa</h2>
     <ol>
